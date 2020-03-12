@@ -4,7 +4,7 @@ import axios from "axios";
 class Options extends Component {
   state = {};
   render() {
-    return <h1>Hello Options World</h1>;
+    return <h1>Hello Options World </h1>;
   }
 
   componentDidMount() {
