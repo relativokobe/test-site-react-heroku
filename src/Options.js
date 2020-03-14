@@ -21,7 +21,7 @@ class Options extends Component {
 
   getRequestHandler() {
     console.log("Get");
-    axios.get("http://localhost:8080/api/get").then(res => {
+    axios.get("https://damp-brook-84372.herokuapp.com/api/get").then(res => {
       console.log(res.headers);
     });
   }
@@ -30,7 +30,7 @@ class Options extends Component {
     console.log("Post");
     axios({
       method: "post",
-      url: "http://localhost:8080/api/post",
+      url: "https://damp-brook-84372.herokuapp.com/api/post",
       data: {
         sample: "sample"
       }
@@ -39,9 +39,11 @@ class Options extends Component {
 
   optionsRequestHandler() {
     console.log("Options");
-    axios.options("http://localhost:8080/api/options").then(res => {
-      console.log(res.headers);
-    });
+    axios
+      .options("https://damp-brook-84372.herokuapp.com/api/options")
+      .then(res => {
+        console.log(res.headers);
+      });
   }
 }
 
