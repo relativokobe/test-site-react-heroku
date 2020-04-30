@@ -6,7 +6,9 @@ class Options extends Component {
   render() {
     return (
       <div>
-        <button onClick={this.sarah}>KINSAY GWAPA?</button>
+        <button style={{ position: fixed }} onClick={this.sarah}>
+          KINSAY GWAPA?
+        </button>
       </div>
     );
   }
