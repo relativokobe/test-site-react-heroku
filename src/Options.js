@@ -6,9 +6,7 @@ class Options extends Component {
   render() {
     return (
       <div>
-        <button onClick={this.sarah}>
-          I CLICK KUNG GANAHAN KA MAKABAW KINSAY GWAPA
-        </button>
+        <button onClick={this.sarah}>KINSAY GWAPA?</button>
       </div>
     );
   }
