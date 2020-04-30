@@ -6,6 +6,7 @@ class Options extends Component {
   render() {
     return (
       <div>
+        HEYYYYYYYY
         <button onClick={this.getRequestHandler} style={{ margin: "10px" }}>
           GET
         </button>
@@ -21,7 +22,7 @@ class Options extends Component {
 
   getRequestHandler() {
     console.log("Get");
-    axios.get("https://damp-brook-84372.herokuapp.com/api/get").then(res => {
+    axios.get("https://damp-brook-84372.herokuapp.com/api/get").then((res) => {
       console.log(res.headers);
     });
   }
@@ -32,8 +33,8 @@ class Options extends Component {
       method: "post",
       url: "https://damp-brook-84372.herokuapp.com/api/post",
       data: {
-        sample: "sample"
-      }
+        sample: "sample",
+      },
     });
   }
 
@@ -41,7 +42,7 @@ class Options extends Component {
     console.log("Options");
     axios
       .options("https://damp-brook-84372.herokuapp.com/api/options")
-      .then(res => {
+      .then((res) => {
         console.log(res.headers);
       });
   }
