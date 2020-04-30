@@ -6,15 +6,8 @@ class Options extends Component {
   render() {
     return (
       <div>
-        HEYYYYYYYY
-        <button onClick={this.getRequestHandler} style={{ margin: "10px" }}>
-          GET
-        </button>
-        <button onClick={this.postRequestHandler} style={{ margin: "10px" }}>
-          POST
-        </button>
-        <button onClick={this.optionsRequestHandler} style={{ margin: "10px" }}>
-          OPTIONS
+        <button onClick={this.sarah}>
+          I CLICK KUNG GANAHAN KA MAKABAW KINSAY GWAPA
         </button>
       </div>
     );
@@ -25,6 +18,10 @@ class Options extends Component {
     axios.get("https://damp-brook-84372.herokuapp.com/api/get").then((res) => {
       console.log(res.headers);
     });
+  }
+
+  sarah() {
+    alert("SARAH HAHAHAHAHAHAHAH");
   }
 
   postRequestHandler() {
@@ -51,3 +48,12 @@ class Options extends Component {
 export default Options;
 
 //https://damp-brook-84372.herokuapp.com/api/options
+// //        <button onClick={this.getRequestHandler} style={{ margin: "10px" }}>
+// //GET
+// //</button>
+// <button onClick={this.postRequestHandler} style={{ margin: "10px" }}>
+//   POST
+// </button>
+// <button onClick={this.optionsRequestHandler} style={{ margin: "10px" }}>
+//   OPTIONS
+// </button>
