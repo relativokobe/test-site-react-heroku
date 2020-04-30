@@ -6,7 +6,10 @@ class Options extends Component {
   render() {
     return (
       <div>
-        <button style={{ position: "fixed" }} onClick={this.sarah}>
+        <button
+          style={{ position: "fixed", top: "50%", left: "50%" }}
+          onClick={this.sarah}
+        >
           KINSAY GWAPA?
         </button>
       </div>
