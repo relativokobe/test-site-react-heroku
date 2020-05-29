@@ -40,3 +40,76 @@
 .Options-button {
   margin: 10px;
 }
+
+.square {
+  border: 2px solid #999;
+  width: 85px;
+  height: 80px;
+  display: inline-block;
+}
+
+.squareObstacle {
+  border: 2px solid #999;
+  width: 85px;
+  height: 80px;
+  display: inline-block;
+  background-color: red;
+}
+
+.clickedSquare {
+  border: 2px solid #999;
+  width: 85px;
+  height: 80px;
+  display: inline-block;
+  background-color: yellow;
+}
+
+.shortestPathSquares {
+  border: 2px solid #999;
+  width: 85px;
+  height: 80px;
+  display: inline-block;
+  background-color: green;
+}
+
+.boardDiv {
+  position: relative;
+}
+
+.legendDiv {
+  display: inline-block;
+}
+
+.colorlegend {
+  width: 85px;
+  margin: 10px;
+  margin-bottom: 0px;
+  height: 20px;
+  display: inline-block;
+}
+
+#userPathDiv {
+  background-color: yellow;
+}
+
+#shortestPathDiv {
+  background-color: green;
+}
+
+#obstacleDiv {
+  background-color: red;
+}
+
+td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+td h3 {
+  margin-top: 20px;
+}
+
+.legendDiv button {
+  margin-left: 30px;
+  background-color: wheat;
+}

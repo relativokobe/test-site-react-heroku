@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
+import "./App.css";
 import * as serviceWorker from "./serviceWorker";
-import Options from "./Options";
+import Game from "./Game";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-ReactDOM.render(<Options />, document.getElementById("root"));
+ReactDOM.render(<Game />, document.getElementById("root"));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
